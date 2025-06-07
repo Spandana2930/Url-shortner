@@ -1,9 +1,9 @@
 import * as React from "react";
 import axios from 'axios'
 import { serverUrl } from "../../helpers/Constants";
-
+import bannerImg from '../../assets/blue-background.jpg'
 interface FormContainerProps {
-  updateReloadState:()=>void 
+  updateReloadState:()=>void
 }
 
 const FormContainer: React.FunctionComponent<FormContainerProps> = (props) => {
@@ -23,8 +23,8 @@ updateReloadState()
   }
   return (
     <div className="container mx-auto p-2">
-      <div className="bg-banner my-8 rounded-xl bg-center">
-        <div className="w-full h-full rounded-xl p-20 backdrop-brightness-50">
+      <div className=" my-8 rounded-xl bg-center" style={{ backgroundImage: `url(${bannerImg})` }}>
+        <div className="w-full h-full rounded-xl p-20 ">
           <h2 className="text-white text-4xl text-center pb-4">Url shortner</h2>
           <p className="text-white text-center pb-2 text-xl font-extralight">
             Paste your untidy link to shortner
