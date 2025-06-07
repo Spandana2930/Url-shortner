@@ -8,8 +8,8 @@ import DataTable from '../DataTable/DataTable';
 interface IContainerProps {
 }
 
-const Container: React.FunctionComponent<IContainerProps> = (props) => {
-  const [data,setData] = React.useState<UrlData>([])
+const Container: React.FunctionComponent<IContainerProps> = () => {
+  const [data,setData] = React.useState<UrlData[]>([])
   const [reload,setReload] = React.useState<boolean>(false)
   const updateReloadState = ():void =>{
     setReload(true)

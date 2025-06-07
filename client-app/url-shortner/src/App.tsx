@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Container from './components/container/container';
+import Container from './components/container/Container';
 
 interface IAppProps {
 }
 
-const App: React.FunctionComponent<IAppProps> = (props) => {
+const App: React.FunctionComponent<IAppProps> = () => {
   return (
     <>
     <Header/>

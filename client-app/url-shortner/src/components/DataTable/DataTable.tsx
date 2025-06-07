@@ -83,7 +83,7 @@ console.log(error)
   }
   const deleteUrl = async(id:string)=>{
 const response = await axios.delete(`${serverUrl}/shortUrl/${id}`)
-// console.log(response)
+console.log(response)
 updateReloadState()
   }
   return (
